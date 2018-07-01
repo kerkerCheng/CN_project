@@ -73,7 +73,7 @@ def add_client(client, addr):
             t = threading.Thread(target=do_stream, args=(parameter,))
             t.start()
         elif request == 'end':
-            print('%s end connection' % addr[0])qqqqqqq
+            print('%s end connection' % addr[0])
             t.do_run = False
             t.join()
             break
