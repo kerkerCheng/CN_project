@@ -3,7 +3,7 @@ import cv2
 import time
 import numpy as np
 
-HOST, PORT = "127.0.0.1", 666
+HOST, PORT = "127.0.0.1", 667
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 s.bind((HOST, PORT))
 
@@ -21,7 +21,7 @@ packet_num = 1
 fps = 0
 
 print("Trying to connect to Server...")
-client_TCP.send('666\n'.encode('utf-8'))
+client_TCP.send('667\n'.encode('utf-8'))
 print("Connected!")
 
 
