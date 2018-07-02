@@ -46,28 +46,28 @@ def add_client(client, addr):
 
         if request == 'mid':
             print('mid----')
-            parameter = (40, 20000, addr[0], prt_num)
+            parameter = (40, 25000, addr[0], prt_num)
             t.do_run = False
             t.join()
             t = threading.Thread(target=do_stream, args=(parameter,))
             t.start()
         elif request == 'mid-low':
             print('mid-low----')
-            parameter = (30, 15000, addr[0], prt_num)
+            parameter = (30, 20000, addr[0], prt_num)
             t.do_run = False
             t.join()
             t = threading.Thread(target=do_stream, args=(parameter,))
             t.start()
         elif request == 'low':
             print('low----')
-            parameter = (20, 12000, addr[0], prt_num)
+            parameter = (20, 16000, addr[0], prt_num)
             t.do_run = False
             t.join()
             t = threading.Thread(target=do_stream, args=(parameter,))
             t.start()
         elif request == 'lowlow':
             print('lowlow----')
-            parameter = (10, 8000, addr[0], prt_num)
+            parameter = (10, 12000, addr[0], prt_num)
             t.do_run = False
             t.join()
             t = threading.Thread(target=do_stream, args=(parameter,))
